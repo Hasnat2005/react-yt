@@ -1,0 +1,49 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.Card {
+    width: 300px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+.Card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  
+    object-fit: cover;
+}
+.Card:hover {
+    transform: translateY(-10px);
+    background-color: grey;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    
+}
+
+.Card button{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
