@@ -1,0 +1,119 @@
+/* Container card styling */
+.card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Top image section */
+.top img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .top img {
+  transform: scale(1.05);
+}
+
+/* Middle section */
+.mid1 {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title */
+.mid1 h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Star rating */
+.star-container {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.star.filled {
+  color: #ffd700; /* Gold stars */
+}
+
+/* Mid2 section for location and price */
+.mid2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mid2 h4 {
+  color: #aaa;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.mid2 h5 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Bottom button */
+.bottom {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bottom button:hover {
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+  transform: scale(1.05);
+}
+
+/* Optional: make card background more visible on dark theme */
+body {
+  background: #1a1a1a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+}
